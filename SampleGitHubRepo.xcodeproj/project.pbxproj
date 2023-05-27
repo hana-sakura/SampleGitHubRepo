@@ -42,6 +42,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3045B8072A2251730021ECAA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30C122772A21E949000BA068 /* SearchBar.swift */,
+				30C122792A21E977000BA068 /* RepositoryViewModel.swift */,
+				30C1227B2A21E9AD000BA068 /* Repository.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3045B8082A22517B0021ECAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30C122672A21E8BD000BA068 /* ContentView.swift */,
+				30C1227D2A21F47B000BA068 /* RepositoryDetailView.swift */,
+				30C122752A21E927000BA068 /* RepositoryRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		30C122592A21E8BD000BA068 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				30C122652A21E8BD000BA068 /* SampleGitHubRepoApp.swift */,
-				30C122672A21E8BD000BA068 /* ContentView.swift */,
-				30C1227D2A21F47B000BA068 /* RepositoryDetailView.swift */,
-				30C122752A21E927000BA068 /* RepositoryRow.swift */,
-				30C122772A21E949000BA068 /* SearchBar.swift */,
-				30C122792A21E977000BA068 /* RepositoryViewModel.swift */,
-				30C1227B2A21E9AD000BA068 /* Repository.swift */,
+				3045B8072A2251730021ECAA /* Utils */,
+				3045B8082A22517B0021ECAA /* View */,
 				30C122692A21E8BF000BA068 /* Assets.xcassets */,
 				30C1226B2A21E8BF000BA068 /* Preview Content */,
 			);
