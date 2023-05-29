@@ -10,7 +10,7 @@ struct RepositoryDetailView: View {
     let repository: Repository
 
     var body: some View {
-        WebView(urlString: repository.htmlURL)
+        WebView(urlString: repository.url)
             .navigationTitle(repository.name)
     }
 }

@@ -5,21 +5,25 @@
 
 import Foundation
 
-struct Repository: Codable, Identifiable {
-    let id: Int
+struct Repository: Decodable, Identifiable {
+    let id: String
     let name: String
     let description: String?
-    let htmlURL: String
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case description
-        case htmlURL = "html_url"
-    }
+    let url: String
 }
 
-struct RepositorySearchResponse: Codable {
-    let items: [Repository]
+struct SearchResponse: Decodable {
+    let data: DataResponse
 }
 
+struct DataResponse: Decodable {
+    let search: SearchResult
+}
+
+struct SearchResult: Decodable {
+    let edges: [Edge]
+}
+
+struct Edge: Decodable {
+    let node: Repository
+}

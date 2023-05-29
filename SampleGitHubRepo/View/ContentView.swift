@@ -7,17 +7,17 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var searchText = ""
-    @StateObject private var viewModel = RepositoryViewModel()
+    @StateObject private var apiClient = GitHubAPIClient()
 
     var body: some View {
         NavigationView {
             VStack {
                 SearchBar(text: $searchText, onSearch: {
-                    viewModel.searchRepositories(searchText: searchText)
+                    apiClient.searchRepositories(query: searchText)
                 })
                 .padding()
 
-                List(viewModel.repositories) { repository in
+                List(apiClient.repositories) { repository in
                     NavigationLink(destination: RepositoryDetailView(repository: repository)) {
                         RepositoryRow(repository: repository)
                     }

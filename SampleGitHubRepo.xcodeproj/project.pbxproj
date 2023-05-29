@@ -13,9 +13,9 @@
 		30C1226D2A21E8BF000BA068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C1226C2A21E8BF000BA068 /* Preview Assets.xcassets */; };
 		30C122762A21E927000BA068 /* RepositoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C122752A21E927000BA068 /* RepositoryRow.swift */; };
 		30C122782A21E949000BA068 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C122772A21E949000BA068 /* SearchBar.swift */; };
-		30C1227A2A21E977000BA068 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C122792A21E977000BA068 /* RepositoryViewModel.swift */; };
 		30C1227C2A21E9AD000BA068 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1227B2A21E9AD000BA068 /* Repository.swift */; };
 		30C1227E2A21F47B000BA068 /* RepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1227D2A21F47B000BA068 /* RepositoryDetailView.swift */; };
+		30CA31702A24946A0014B607 /* GitHubAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA316F2A24946A0014B607 /* GitHubAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +26,9 @@
 		30C1226C2A21E8BF000BA068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30C122752A21E927000BA068 /* RepositoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRow.swift; sourceTree = "<group>"; };
 		30C122772A21E949000BA068 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		30C122792A21E977000BA068 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		30C1227B2A21E9AD000BA068 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		30C1227D2A21F47B000BA068 /* RepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailView.swift; sourceTree = "<group>"; };
+		30CA316F2A24946A0014B607 /* GitHubAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 			isa = PBXGroup;
 			children = (
 				30C122772A21E949000BA068 /* SearchBar.swift */,
-				30C122792A21E977000BA068 /* RepositoryViewModel.swift */,
 				30C1227B2A21E9AD000BA068 /* Repository.swift */,
+				30CA316F2A24946A0014B607 /* GitHubAPIClient.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				30C122762A21E927000BA068 /* RepositoryRow.swift in Sources */,
 				30C1227E2A21F47B000BA068 /* RepositoryDetailView.swift in Sources */,
 				30C122782A21E949000BA068 /* SearchBar.swift in Sources */,
-				30C1227A2A21E977000BA068 /* RepositoryViewModel.swift in Sources */,
+				30CA31702A24946A0014B607 /* GitHubAPIClient.swift in Sources */,
 				30C122682A21E8BD000BA068 /* ContentView.swift in Sources */,
 				30C122662A21E8BD000BA068 /* SampleGitHubRepoApp.swift in Sources */,
 				30C1227C2A21E9AD000BA068 /* Repository.swift in Sources */,
@@ -311,6 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
