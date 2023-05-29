@@ -2,6 +2,10 @@
 
 GitHubのリポジトリを検索するサンプルです。
 
-下記学習用
+GitHub GraphQL API
+https://docs.github.com/ja/graphql
+
+### 下記学習用
 - SwiftUI
 - Combine
+- GraphQL
